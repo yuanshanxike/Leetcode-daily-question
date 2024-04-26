@@ -1,4 +1,4 @@
-namespace Leetcode;
+namespace Struct;
 
 public class TreeNode {
     public int val;
