@@ -18,8 +18,15 @@
 // Console.WriteLine(s.DistanceTraveled(9, 2));
 
 // 1146
-L1146.SnapshotArray arr = new(3);
-arr.Set(0,5);
-Console.WriteLine(arr.Snap());
-arr.Set(0,6);
-Console.WriteLine(arr.Get(0,0));
+// L1146.SnapshotArray arr = new(3);
+// arr.Set(0,5);
+// Console.WriteLine(arr.Snap());
+// arr.Set(0,6);
+// Console.WriteLine(arr.Get(0,0));
+
+// 1017
+L1017.Solution s = new();
+Console.WriteLine(s.BaseNeg2(2));
+Console.WriteLine(s.BaseNeg2(3));
+Console.WriteLine(s.BaseNeg2(4));
+Console.WriteLine(s.BaseNeg2((int)1e9));
