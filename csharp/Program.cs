@@ -25,8 +25,14 @@
 // Console.WriteLine(arr.Get(0,0));
 
 // 1017
-L1017.Solution s = new();
-Console.WriteLine(s.BaseNeg2(2));
-Console.WriteLine(s.BaseNeg2(3));
-Console.WriteLine(s.BaseNeg2(4));
-Console.WriteLine(s.BaseNeg2((int)1e9));
+// L1017.Solution s = new();
+// Console.WriteLine(s.BaseNeg2(2));
+// Console.WriteLine(s.BaseNeg2(3));
+// Console.WriteLine(s.BaseNeg2(4));
+// Console.WriteLine(s.BaseNeg2((int)1e9));
+
+// 1329
+L1329.Solution s = new();
+var printArr = (int[] arr) => Console.WriteLine(string.Join(' ', arr));
+s.DiagonalSort([[3,3,1,1],[2,2,1,2],[1,1,1,2]]).ToList().ForEach(printArr);
+s.DiagonalSort([[11,25,66,1,69,7],[23,55,17,45,15,52],[75,31,36,44,58,8],[22,27,33,25,68,4],[84,28,14,11,5,50]]).ToList().ForEach(printArr);

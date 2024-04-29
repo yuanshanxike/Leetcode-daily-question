@@ -18,7 +18,7 @@ public class Solution {
         if (0 <= n && n <= 1) return $"{n}";
         var bMax = (1 << 2) + 1;
         var power = 0;
-        for (; bMax < n; bMax = (bMax << 2) + 1) { power++; }
+        for (; bMax < n; bMax = (bMax << 2) + 1, power++) { }
         var ans = "1";
         var bMin = 0; // 从右向左累加，把负数加完后再统一取相反数
         for (int i = 0; i <= power; i++) {
