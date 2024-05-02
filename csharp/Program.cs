@@ -256,9 +256,16 @@
 // Console.WriteLine(s.NumberOfEmployeesWhoMetTarget([5,1,4,2,2], 6));
 
 // 2462
-L2462.Solution s = new();
-Console.WriteLine(s.TotalCost([17,12,10,2,7,2,11,20,8], 3, 4));
-Console.WriteLine(s.TotalCost([1,2,4,1], 3, 3));
-Console.WriteLine(s.TotalCost([17,12,10,2,7,2,11,20,8], 4, 3));
-Console.WriteLine(s.TotalCost([57,33,26,76,14,67,24,90,72,37,30], 11, 2));
-Console.WriteLine(s.TotalCost([28,35,21,13,21,72,35,52,74,92,25,65,77,1,73,32,43,68,8,100,84,80,14,88,42,53,98,69,64,40,60,23,99,83,5,21,76,34], 32, 12));
+// L2462.Solution s = new();
+// Console.WriteLine(s.TotalCost([17,12,10,2,7,2,11,20,8], 3, 4));
+// Console.WriteLine(s.TotalCost([1,2,4,1], 3, 3));
+// Console.WriteLine(s.TotalCost([17,12,10,2,7,2,11,20,8], 4, 3));
+// Console.WriteLine(s.TotalCost([57,33,26,76,14,67,24,90,72,37,30], 11, 2));
+// Console.WriteLine(s.TotalCost([28,35,21,13,21,72,35,52,74,92,25,65,77,1,73,32,43,68,8,100,84,80,14,88,42,53,98,69,64,40,60,23,99,83,5,21,76,34], 32, 12));
+
+// 857
+L857.Solution s = new();
+Console.WriteLine(s.MincostToHireWorkers([10,20,5], [70,50,30], 2));
+Console.WriteLine(s.MincostToHireWorkers([3,1,10,10,1], [4,8,2,2,7], 3));
+Console.WriteLine(s.MincostToHireWorkers([3,1,10,10,1], [4,8,2,2,7], 2));
+Console.WriteLine(s.MincostToHireWorkers([3,1,10,10,1,1], [4,8,2,2,7,9], 3));
