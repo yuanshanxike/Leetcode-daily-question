@@ -251,6 +251,14 @@
 // s.DiagonalSort([[11,25,66,1,69,7],[23,55,17,45,15,52],[75,31,36,44,58,8],[22,27,33,25,68,4],[84,28,14,11,5,50]]).ToList().ForEach(printArr);
 
 // 2798
-L2798.Solution s = new();
-Console.WriteLine(s.NumberOfEmployeesWhoMetTarget([0,1,2,3,4], 2));
-Console.WriteLine(s.NumberOfEmployeesWhoMetTarget([5,1,4,2,2], 6));
+// L2798.Solution s = new();
+// Console.WriteLine(s.NumberOfEmployeesWhoMetTarget([0,1,2,3,4], 2));
+// Console.WriteLine(s.NumberOfEmployeesWhoMetTarget([5,1,4,2,2], 6));
+
+// 2462
+L2462.Solution s = new();
+Console.WriteLine(s.TotalCost([17,12,10,2,7,2,11,20,8], 3, 4));
+Console.WriteLine(s.TotalCost([1,2,4,1], 3, 3));
+Console.WriteLine(s.TotalCost([17,12,10,2,7,2,11,20,8], 4, 3));
+Console.WriteLine(s.TotalCost([57,33,26,76,14,67,24,90,72,37,30], 11, 2));
+Console.WriteLine(s.TotalCost([28,35,21,13,21,72,35,52,74,92,25,65,77,1,73,32,43,68,8,100,84,80,14,88,42,53,98,69,64,40,60,23,99,83,5,21,76,34], 32, 12));
