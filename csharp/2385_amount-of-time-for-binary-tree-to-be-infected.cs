@@ -1,4 +1,4 @@
-using Struct;
+using Leetcode;
 
 namespace L2385;
 
