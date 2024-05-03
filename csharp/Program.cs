@@ -264,8 +264,15 @@
 // Console.WriteLine(s.TotalCost([28,35,21,13,21,72,35,52,74,92,25,65,77,1,73,32,43,68,8,100,84,80,14,88,42,53,98,69,64,40,60,23,99,83,5,21,76,34], 32, 12));
 
 // 857
-L857.Solution s = new();
-Console.WriteLine(s.MincostToHireWorkers([10,20,5], [70,50,30], 2));
-Console.WriteLine(s.MincostToHireWorkers([3,1,10,10,1], [4,8,2,2,7], 3));
-Console.WriteLine(s.MincostToHireWorkers([3,1,10,10,1], [4,8,2,2,7], 2));
-Console.WriteLine(s.MincostToHireWorkers([3,1,10,10,1,1], [4,8,2,2,7,9], 3));
+// L857.Solution s = new();
+// Console.WriteLine(s.MincostToHireWorkers([10,20,5], [70,50,30], 2));
+// Console.WriteLine(s.MincostToHireWorkers([3,1,10,10,1], [4,8,2,2,7], 3));
+// Console.WriteLine(s.MincostToHireWorkers([3,1,10,10,1], [4,8,2,2,7], 2));
+// Console.WriteLine(s.MincostToHireWorkers([3,1,10,10,1,1], [4,8,2,2,7,9], 3));
+
+// 1491
+L1491.Solution s = new();
+Console.WriteLine(s.Average([4000,3000,1000,2000]));
+Console.WriteLine(s.Average([1000,2000,3000]));
+Console.WriteLine(s.Average([6000,5000,4000,3000,2000,1000]));
+Console.WriteLine(s.Average([8000,9000,2000,3000,6000,1000]));
