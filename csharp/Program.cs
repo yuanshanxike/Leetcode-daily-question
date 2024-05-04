@@ -271,8 +271,19 @@
 // Console.WriteLine(s.MincostToHireWorkers([3,1,10,10,1,1], [4,8,2,2,7,9], 3));
 
 // 1491
-L1491.Solution s = new();
-Console.WriteLine(s.Average([4000,3000,1000,2000]));
-Console.WriteLine(s.Average([1000,2000,3000]));
-Console.WriteLine(s.Average([6000,5000,4000,3000,2000,1000]));
-Console.WriteLine(s.Average([8000,9000,2000,3000,6000,1000]));
+// L1491.Solution s = new();
+// Console.WriteLine(s.Average([4000,3000,1000,2000]));
+// Console.WriteLine(s.Average([1000,2000,3000]));
+// Console.WriteLine(s.Average([6000,5000,4000,3000,2000,1000]));
+// Console.WriteLine(s.Average([8000,9000,2000,3000,6000,1000]));
+
+// 1235
+L1235.Solution s = new();
+Console.WriteLine(s.JobScheduling([1,2,3,3], [3,4,5,6], [50,10,40,70]));
+Console.WriteLine(s.JobScheduling([1,2,3,4,6], [3,5,10,6,9], [20,20,100,70,60]));
+Console.WriteLine(s.JobScheduling([1,1,1], [2,3,4], [5,6,4]));
+Console.WriteLine(s.JobScheduling([2,3,1,3], [4,5,3,6], [10,40,50,70]));
+Console.WriteLine(s.JobScheduling([4,2,4,8,2], [5,5,5,10,8], [1,2,8,10,4])); // 18
+Console.WriteLine(s.JobScheduling([4,2,4,2], [5,5,5,8], [1,2,8,4]));
+Console.WriteLine(s.JobScheduling([4,3,1,2,4,8,3,3,3,9], [5,6,3,5,9,9,8,5,7,10], [9,9,5,12,10,11,10,4,14,7]));  // 37
+Console.WriteLine(s.JobScheduling([4,3,1,2,4,7,3,3,3,9], [5,6,3,5,9,8,8,5,7,10], [9,9,5,12,10,11,10,4,14,7]));  // 37
