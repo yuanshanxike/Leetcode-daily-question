@@ -289,7 +289,35 @@
 // Console.WriteLine(s.JobScheduling([4,3,1,2,4,7,3,3,3,9], [5,6,3,5,9,8,8,5,7,10], [9,9,5,12,10,11,10,4,14,7]));  // 37
 
 // 1652
-L1652.Solution s = new();
-Console.WriteLine(string.Join(',', s.Decrypt2([5,7,1,4], 3)));  // [12,10,16,13]
-Console.WriteLine(string.Join(',', s.Decrypt2([1,2,3,4], 0)));  // [0,0,0,0]
-Console.WriteLine(string.Join(',', s.Decrypt2([2,4,9,3], -2))); // [12,5,6,13]
+// L1652.Solution s = new();
+// Console.WriteLine(string.Join(',', s.Decrypt2([5,7,1,4], 3)));  // [12,10,16,13]
+// Console.WriteLine(string.Join(',', s.Decrypt2([1,2,3,4], 0)));  // [0,0,0,0]
+// Console.WriteLine(string.Join(',', s.Decrypt2([2,4,9,3], -2))); // [12,5,6,13]
+
+// 741
+L741.Solution s = new();
+Console.WriteLine(s.CherryPickup([[0,1,-1],[1,0,-1],[1,1,1]]));
+Console.WriteLine(s.CherryPickup([[1,1,-1],[1,-1,1],[-1,1,1]]));
+Console.WriteLine(s.CherryPickup([[1,1,1,1,1],[1,1,-1,1,1],[-1,-1,1,1,1],[1,1,1,1,1],[-1,1,1,1,1]]));
+Console.WriteLine(s.CherryPickup([[1,1,1,1,-1],[1,1,-1,1,1],[-1,-1,1,1,1],[1,1,1,1,1],[-1,1,1,1,1]]));
+Console.WriteLine(s.CherryPickup([[1,1,1,1,0],[1,1,-1,0,1],[-1,-1,1,1,1],[1,1,1,1,1],[-1,1,1,1,1]]));
+Console.WriteLine(s.CherryPickup([[1]]));
+Console.WriteLine(s.CherryPickup([[1,1,1,1,0,0,0],[0,0,0,1,0,0,0],[0,0,0,1,0,0,1],[1,0,0,1,0,0,0],[0,0,0,1,0,0,0],[0,0,0,1,0,0,0],[0,0,0,1,1,1,1]]));
+
+/**
+ 1 1 1 1 1
+ 1 1-1 1 1
+-1-1 1 1 1
+ 1 1 1 1 1
+-1 1 1 1 1 
+
+两次 dp 失效:
+ 1 1 1 1 0 0 0
+ 0 0 0 1 0 0 0
+ 0 0 0 1 0 0 1
+ 1 0 0 1 0 0 0
+ 0 0 0 1 0 0 0
+ 0 0 0 1 0 0 0
+ 0 0 0 1 1 1 1
+
+*/
