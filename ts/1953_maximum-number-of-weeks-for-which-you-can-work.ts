@@ -7,15 +7,20 @@
  * 1 个。回到题目，这种情况下答案就是 s + m。
  */
 function numberOfWeeks(milestones: number[]): number {
-    let max = 0
-    let sum = 0
-    for (let val of milestones) {
-        max = val > max ? val : max
-        sum += val
-    }
-    sum -= max
-    if (sum < max - 1) return sum * 2 + 1
-    else return sum + max
+    // let max = 0
+    // let sum = 0
+    // for (let val of milestones) {
+    //     max = val > max ? val : max
+    //     sum += val
+    // }
+    // sum -= max
+    // if (sum < max - 1) return sum * 2 + 1
+    // else return sum + max
+
+    // 调用 api 的简介写法：
+    const s: number = milestones.reduce((acc, val) => acc + val, 0)
+    const m: number = Math.max(...milestones)
+    return m > s - m + 1 ? (s - m) * 2 + 1 : s
 };
 
 console.log(numberOfWeeks([1,2,3]))

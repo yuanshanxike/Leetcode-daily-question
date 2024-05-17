@@ -328,6 +328,12 @@
 // Console.WriteLine(s.CherryPickup([[1,0,0,0,0,0,1],[2,0,0,0,0,3,0],[2,0,9,0,0,0,0],[0,3,0,5,4,0,0],[1,0,2,3,0,0,6]]));
 
 // 2391
-L2391.Solution s = new();
-Console.WriteLine(s.GarbageCollection(["G","P","GP","GG"], [2,4,3]));
-Console.WriteLine(s.GarbageCollection(["MMM","PGM","GP"], [3,10]));
+// L2391.Solution s = new();
+// Console.WriteLine(s.GarbageCollection(["G","P","GP","GG"], [2,4,3]));
+// Console.WriteLine(s.GarbageCollection(["MMM","PGM","GP"], [3,10]));
+
+// 826
+L826.Solution s = new();
+Console.WriteLine(s.MaxProfitAssignment([2,4,6,8,10], [10,20,30,40,50], [4,5,6,7]));
+Console.WriteLine(s.MaxProfitAssignment([85,47,57], [24,66,99], [40,25,25]));
+Console.WriteLine(s.MaxProfitAssignment([85,24,24,1], [24,66,99,100], [40,25,25]));
