@@ -333,7 +333,14 @@
 // Console.WriteLine(s.GarbageCollection(["MMM","PGM","GP"], [3,10]));
 
 // 826
-L826.Solution s = new();
-Console.WriteLine(s.MaxProfitAssignment([2,4,6,8,10], [10,20,30,40,50], [4,5,6,7]));
-Console.WriteLine(s.MaxProfitAssignment([85,47,57], [24,66,99], [40,25,25]));
-Console.WriteLine(s.MaxProfitAssignment([85,24,24,1], [24,66,99,100], [40,25,25]));
+// L826.Solution s = new();
+// Console.WriteLine(s.MaxProfitAssignment([2,4,6,8,10], [10,20,30,40,50], [4,5,6,7]));
+// Console.WriteLine(s.MaxProfitAssignment([85,47,57], [24,66,99], [40,25,25]));
+// Console.WriteLine(s.MaxProfitAssignment([85,24,24,1], [24,66,99,100], [40,25,25]));
+
+// 1738
+L1738.Solution s = new();
+Console.WriteLine(s.KthLargestValue([[5,2],[1,6]], 1));
+Console.WriteLine(s.KthLargestValue([[5,2],[1,6]], 2));
+Console.WriteLine(s.KthLargestValue([[5,2],[1,6]], 3));
+Console.WriteLine(s.KthLargestValue([[5,2],[1,6]], 4));
