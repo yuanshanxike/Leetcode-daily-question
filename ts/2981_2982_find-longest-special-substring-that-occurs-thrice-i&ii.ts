@@ -59,3 +59,34 @@ function count(alphabet: string): number {
 console.log(maximumLength('aaaa'))   // 2
 console.log(maximumLength('abcdef')) // -1
 console.log(maximumLength('abcaba')) // 1  
+
+
+/** 分类讨论，思路：
+ * https://leetcode.cn/problems/find-longest-special-substring-that-occurs-thrice-ii/solutions/2585801/fen-lei-tao-lun-jian-ji-xie-fa-pythonjav-671l/
+ */
+function maximumLength_ii(s: string): number {
+    const n = s.length
+    const groups = Array.from({ length: 26 }, () => [] as number[])
+    let cnt = 0
+    for (let i = 0; i < n; i++) {
+        cnt++
+        if (i + 1 === n || s[i] !== s[i + 1]) {
+            groups[s[i].charCodeAt(0) - 'a'.charCodeAt(0)].push(cnt)
+            cnt = 0
+        }
+    }
+
+    let ans = 0
+    for (let a of groups) {
+        if (a.length === 0) continue
+        a.sort((x, y) => y - x)
+        a.push(0, 0)  // 方便进行比较只有 一个 或 两个 元素的情况而加入的两个 0
+        ans = Math.max(ans, a[0] - 2, Math.min(a[0] - 1, a[1]), a[2])
+    }
+
+    return ans ? ans : -1
+}
+
+console.log(maximumLength_ii('aaaa'))   // 2
+console.log(maximumLength_ii('abcdef')) // -1
+console.log(maximumLength_ii('abcaba')) // 1  
