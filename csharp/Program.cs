@@ -339,8 +339,13 @@
 // Console.WriteLine(s.MaxProfitAssignment([85,24,24,1], [24,66,99,100], [40,25,25]));
 
 // 1738
-L1738.Solution s = new();
-Console.WriteLine(s.KthLargestValue([[5,2],[1,6]], 1));
-Console.WriteLine(s.KthLargestValue([[5,2],[1,6]], 2));
-Console.WriteLine(s.KthLargestValue([[5,2],[1,6]], 3));
-Console.WriteLine(s.KthLargestValue([[5,2],[1,6]], 4));
+// L1738.Solution s = new();
+// Console.WriteLine(s.KthLargestValue([[5,2],[1,6]], 1));
+// Console.WriteLine(s.KthLargestValue([[5,2],[1,6]], 2));
+// Console.WriteLine(s.KthLargestValue([[5,2],[1,6]], 3));
+// Console.WriteLine(s.KthLargestValue([[5,2],[1,6]], 4));
+
+// 3072
+L3072.Solution s = new();
+Console.WriteLine(string.Join(",", s.ResultArray([2,1,3,3])));
+Console.WriteLine(string.Join(",", s.ResultArray([5,14,3,1,2])));
