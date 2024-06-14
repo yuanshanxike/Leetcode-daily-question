@@ -351,12 +351,17 @@
 // Console.WriteLine(string.Join(",", s.ResultArray([5,14,3,1,2])));
 
 // 881
-L881.Solution s = new();
-Console.WriteLine(s.NumRescueBoats([1,2], 3));
-Console.WriteLine(s.NumRescueBoats([3,2,2,1], 3));
-Console.WriteLine(s.NumRescueBoats([3,5,3,4], 5));
-Console.WriteLine(s.NumRescueBoats([3,5], 5));
-Console.WriteLine(s.NumRescueBoats([5], 5));
-Console.WriteLine(s.NumRescueBoats([3], 5));
-Console.WriteLine(s.NumRescueBoats([2,2], 6));
-Console.WriteLine(s.NumRescueBoats([2,49,10,7,11,41,47,2,22,6,13,12,33,18,10,26,2,6,50,10], 50));
+// L881.Solution s = new();
+// Console.WriteLine(s.NumRescueBoats([1,2], 3));
+// Console.WriteLine(s.NumRescueBoats([3,2,2,1], 3));
+// Console.WriteLine(s.NumRescueBoats([3,5,3,4], 5));
+// Console.WriteLine(s.NumRescueBoats([3,5], 5));
+// Console.WriteLine(s.NumRescueBoats([5], 5));
+// Console.WriteLine(s.NumRescueBoats([3], 5));
+// Console.WriteLine(s.NumRescueBoats([2,2], 6));
+// Console.WriteLine(s.NumRescueBoats([2,49,10,7,11,41,47,2,22,6,13,12,33,18,10,26,2,6,50,10], 50));
+
+// 2786
+L2786.Solution s = new();
+Console.WriteLine(s.MaxScore([2,3,6,1,9,2], 5));
+Console.WriteLine(s.MaxScore([2,4,6,8], 3));
