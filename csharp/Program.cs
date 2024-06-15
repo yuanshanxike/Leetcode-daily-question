@@ -362,6 +362,11 @@
 // Console.WriteLine(s.NumRescueBoats([2,49,10,7,11,41,47,2,22,6,13,12,33,18,10,26,2,6,50,10], 50));
 
 // 2786
-L2786.Solution s = new();
-Console.WriteLine(s.MaxScore([2,3,6,1,9,2], 5));
-Console.WriteLine(s.MaxScore([2,4,6,8], 3));
+// L2786.Solution s = new();
+// Console.WriteLine(s.MaxScore([2,3,6,1,9,2], 5));
+// Console.WriteLine(s.MaxScore([2,4,6,8], 3));
+
+// 2779
+L2779.Solution s = new();
+Console.WriteLine(s.MaximumBeauty([4,6,1,2], 2));
+Console.WriteLine(s.MaximumBeauty([1,1,1,1], 10));
