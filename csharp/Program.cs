@@ -367,6 +367,12 @@
 // Console.WriteLine(s.MaxScore([2,4,6,8], 3));
 
 // 2779
-L2779.Solution s = new();
-Console.WriteLine(s.MaximumBeauty([4,6,1,2], 2));
-Console.WriteLine(s.MaximumBeauty([1,1,1,1], 10));
+// L2779.Solution s = new();
+// Console.WriteLine(s.MaximumBeauty([4,6,1,2], 2));
+// Console.WriteLine(s.MaximumBeauty([1,1,1,1], 10));
+
+// 2713
+L2713.Solution s = new();
+Console.WriteLine(s.MaxIncreasingCells([[3,1],[3,4]]));
+Console.WriteLine(s.MaxIncreasingCells([[1,1],[1,1]]));
+Console.WriteLine(s.MaxIncreasingCells([[3,1,6],[-9,5,7]]));
