@@ -10,7 +10,8 @@
 function specialPerm(nums: number[]): number {
     const n = nums.length
     const u = (1 << n) - 1
-    const memony = Array(u).fill(undefined).map(() => Array<number>(n).fill(-1))
+    // const memony = Array(u).fill(undefined).map(() => Array<number>(n).fill(-1))
+    const memony = Array.from({ length: u }, () => Array<number>(n).fill(-1))
 
     function dfs(s: number, i: number): number {
         if (s == 0) return 1 // 待选取数组为空集
@@ -36,3 +37,4 @@ console.log(specialPerm([2,3,6]))
 console.log(specialPerm([1,4,3]))
 console.log(specialPerm([1,2,4,3]))
 console.log(specialPerm([1,2,4,3,5]))
+console.log(specialPerm([1,2,4,8,16,32,64,128,256,512,1024,2048,4096,8191]))
