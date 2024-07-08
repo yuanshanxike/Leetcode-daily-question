@@ -372,7 +372,14 @@
 // Console.WriteLine(s.MaximumBeauty([1,1,1,1], 10));
 
 // 2713
-L2713.Solution s = new();
-Console.WriteLine(s.MaxIncreasingCells([[3,1],[3,4]]));
-Console.WriteLine(s.MaxIncreasingCells([[1,1],[1,1]]));
-Console.WriteLine(s.MaxIncreasingCells([[3,1,6],[-9,5,7]]));
+// L2713.Solution s = new();
+// Console.WriteLine(s.MaxIncreasingCells([[3,1],[3,4]]));
+// Console.WriteLine(s.MaxIncreasingCells([[1,1],[1,1]]));
+// Console.WriteLine(s.MaxIncreasingCells([[3,1,6],[-9,5,7]]));
+
+// 724
+L724.Solution s = new();
+Console.WriteLine(s.PivotIndex([1,7,3,6,5,6]));
+Console.WriteLine(s.PivotIndex([1,2,3]));
+Console.WriteLine(s.PivotIndex([2,1,-1]));
+Console.WriteLine(s.PivotIndex([-1,-1,-1,-1,-1,0]));
