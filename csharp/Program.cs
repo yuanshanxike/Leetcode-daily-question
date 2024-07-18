@@ -385,6 +385,12 @@
 // Console.WriteLine(s.PivotIndex([-1,-1,-1,-1,-1,0]));
 
 // 3102
-L3102.Solution s = new();
-Console.WriteLine(s.MinimumDistance([[3,10],[5,15],[10,2],[4,4]]));
-Console.WriteLine(s.MinimumDistance([[1,1],[1,1],[1,1]]));
+// L3102.Solution s = new();
+// Console.WriteLine(s.MinimumDistance([[3,10],[5,15],[10,2],[4,4]]));
+// Console.WriteLine(s.MinimumDistance([[1,1],[1,1],[1,1]]));
+
+// 3112
+L3112.Solution s = new();
+Console.WriteLine(string.Join(',', s.MinimumTime(3, [[0,1,2],[1,2,1],[0,2,4]], [1,1,5])));
+Console.WriteLine(string.Join(',', s.MinimumTime(3, [[0,1,2],[1,2,1],[0,2,4]], [1,3,5])));
+Console.WriteLine(string.Join(',', s.MinimumTime(2, [[0,1,1]], [1,1])));

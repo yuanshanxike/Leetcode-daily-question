@@ -11,4 +11,11 @@ internal static class Extension
         first = pair[0];
         second = pair[1];
     }
+
+    internal static void Deconstruct<T>(this T[] tuple, out T first, out T second, out T third)
+    {
+        first = tuple[0];
+        second = tuple[1];
+        third = tuple[2];
+    }
 }
