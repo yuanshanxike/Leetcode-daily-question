@@ -402,7 +402,12 @@
 // Console.WriteLine(s.GetSmallestString("lol", 0));
 
 // 3111
-L3111.Solution s = new();
-Console.WriteLine(s.MinRectanglesToCoverPoints([[2,1],[1,0],[1,4],[1,8],[3,5],[4,6]], 1));
-Console.WriteLine(s.MinRectanglesToCoverPoints([[0,0],[1,1],[2,2],[3,3],[4,4],[5,5],[6,6]], 2));
-Console.WriteLine(s.MinRectanglesToCoverPoints([[2,3],[1,2]], 0));
+// L3111.Solution s = new();
+// Console.WriteLine(s.MinRectanglesToCoverPoints([[2,1],[1,0],[1,4],[1,8],[3,5],[4,6]], 1));
+// Console.WriteLine(s.MinRectanglesToCoverPoints([[0,0],[1,1],[2,2],[3,3],[4,4],[5,5],[6,6]], 2));
+// Console.WriteLine(s.MinRectanglesToCoverPoints([[2,3],[1,2]], 0));
+
+// 2940
+L2940.Solution s = new();
+Console.WriteLine(string.Join(", ", s.LeftmostBuildingQueries([6,4,8,5,2,7], [[0,1],[0,3],[2,4],[3,4],[2,2]])));
+Console.WriteLine(string.Join(", ", s.LeftmostBuildingQueries([5,3,8,2,6,1,4,6], [[0,7],[3,5],[5,2],[3,0],[1,6]])));
