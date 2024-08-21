@@ -413,6 +413,15 @@
 // Console.WriteLine(string.Join(", ", s.LeftmostBuildingQueries([5,3,8,2,6,1,4,6], [[0,7],[3,5],[5,2],[3,0],[1,6]])));
 
 // 3152
-L3152.Solution s = new();
-Console.WriteLine(string.Join(',', s.IsArraySpecial([3,4,1,2,6], [[0,4]])));
-Console.WriteLine(string.Join(',', s.IsArraySpecial([4,3,1,6], [[0,2],[2,3]])));
+// L3152.Solution s = new();
+// Console.WriteLine(string.Join(',', s.IsArraySpecial([3,4,1,2,6], [[0,4]])));
+// Console.WriteLine(string.Join(',', s.IsArraySpecial([4,3,1,6], [[0,2],[2,3]])));
+
+// 3007
+L3007.Solution s = new ();
+Console.WriteLine(s.FindMaximumNumber(9, 1));
+Console.WriteLine(s.FindMaximumNumber(7, 2));
+Console.WriteLine(s.FindMaximumNumber(50, 7));    // 113
+Console.WriteLine(s.FindMaximumNumber(50, 8));    // 177
+Console.WriteLine(s.FindMaximumNumber(100000000000, 2));    // 12129043515
+Console.WriteLine(s.FindMaximumNumber(10000000000000, 7));  // 3487851144340
