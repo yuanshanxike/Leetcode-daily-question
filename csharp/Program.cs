@@ -427,7 +427,12 @@
 // Console.WriteLine(s.FindMaximumNumber(10000000000000, 7));  // 3487851144340
 
 // 3133
-L3133.Solution s = new();
-Console.WriteLine(s.MinEnd(3, 4));
-Console.WriteLine(s.MinEnd(2, 7));
-Console.WriteLine(s.MinEnd(100000000, 100000000));
+// L3133.Solution s = new();
+// Console.WriteLine(s.MinEnd(3, 4));
+// Console.WriteLine(s.MinEnd(2, 7));
+// Console.WriteLine(s.MinEnd(100000000, 100000000));
+
+// 2555
+L2555.Solution s = new();
+Console.WriteLine(s.MaximizeWin([1,1,2,2,3,3,5], 2));
+Console.WriteLine(s.MaximizeWin([1,2,3,4], 0));
