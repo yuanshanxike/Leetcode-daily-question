@@ -45,10 +45,10 @@ namespace L2555 {
         private static int BinarySearchLowBound(int[] arr, int start, int len, int target) {
             int l = Array.BinarySearch(arr, start, len, target);
             if (l < 0) l = ~l;
-            else { // 能找到值等于 pos + k 的数
+            else { // 能找到值等于 target 的数
                 while (true) { // 继续找左边
-                    if (l == 0 || arr[l - 1] < target) break;
-                    l = Array.BinarySearch(arr, 0, l, target);
+                    if (l == start || arr[l - 1] < target) break;
+                    l = Array.BinarySearch(arr, start, l - start, target);
                 }
             }
             return l;
