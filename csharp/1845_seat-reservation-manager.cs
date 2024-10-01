@@ -1,3 +1,5 @@
+namespace L1845;
+
 public class SeatManager {
     private readonly PriorityQueue<int, int> heap;
     private readonly HashSet<int> availableSeats;

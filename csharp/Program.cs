@@ -438,12 +438,17 @@
 // Console.WriteLine(s.MaximizeWin([1,2,3,4], 0));
 
 // 2576
-L2576.Solution s = new();
-Console.WriteLine(s.MaxNumOfMarkedIndices([3,5,2,4]));
-Console.WriteLine(s.MaxNumOfMarkedIndices([9,2,5,4]));
-Console.WriteLine(s.MaxNumOfMarkedIndices([7,6,8]));
-Console.WriteLine(s.MaxNumOfMarkedIndices([48,49,50,100,200,300]));
-Console.WriteLine(s.MaxNumOfMarkedIndices([48,49,50,99,150,151,152]));
-Console.WriteLine(s.MaxNumOfMarkedIndices([47,48,49,100,200,300]));
-Console.WriteLine(s.MaxNumOfMarkedIndices([50,51,52,100,200,300]));
-Console.WriteLine(s.MaxNumOfMarkedIndices([1, 3, 4, 1, 2, 2, 4, 2, 2, 2]));
+// L2576.Solution s = new();
+// Console.WriteLine(s.MaxNumOfMarkedIndices([3,5,2,4]));
+// Console.WriteLine(s.MaxNumOfMarkedIndices([9,2,5,4]));
+// Console.WriteLine(s.MaxNumOfMarkedIndices([7,6,8]));
+// Console.WriteLine(s.MaxNumOfMarkedIndices([48,49,50,100,200,300]));
+// Console.WriteLine(s.MaxNumOfMarkedIndices([48,49,50,99,150,151,152]));
+// Console.WriteLine(s.MaxNumOfMarkedIndices([47,48,49,100,200,300]));
+// Console.WriteLine(s.MaxNumOfMarkedIndices([50,51,52,100,200,300]));
+// Console.WriteLine(s.MaxNumOfMarkedIndices([1, 3, 4, 1, 2, 2, 4, 2, 2, 2]));
+
+// 983
+L983.Solution s = new();
+Console.WriteLine(s.MincostTickets([1,4,6,7,8,20], [2,7,15]));
+Console.WriteLine(s.MincostTickets([1,2,3,4,5,6,7,8,9,10,30,31], [2,7,15]));
