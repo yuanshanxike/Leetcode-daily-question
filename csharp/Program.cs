@@ -449,6 +449,12 @@
 // Console.WriteLine(s.MaxNumOfMarkedIndices([1, 3, 4, 1, 2, 2, 4, 2, 2, 2]));
 
 // 983
-L983.Solution s = new();
-Console.WriteLine(s.MincostTickets([1,4,6,7,8,20], [2,7,15]));
-Console.WriteLine(s.MincostTickets([1,2,3,4,5,6,7,8,9,10,30,31], [2,7,15]));
+// L983.Solution s = new();
+// Console.WriteLine(s.MincostTickets([1,4,6,7,8,20], [2,7,15]));
+// Console.WriteLine(s.MincostTickets([1,2,3,4,5,6,7,8,9,10,30,31], [2,7,15]));
+
+// 871
+L871.Solution s = new();
+Console.WriteLine(s.MinRefuelStops(1, 1, []));
+Console.WriteLine(s.MinRefuelStops(100, 1, [[10,100]]));
+Console.WriteLine(s.MinRefuelStops(100, 10, [[10,60],[20,30],[30,30],[60,40]]));
