@@ -454,7 +454,15 @@
 // Console.WriteLine(s.MincostTickets([1,2,3,4,5,6,7,8,9,10,30,31], [2,7,15]));
 
 // 871
-L871.Solution s = new();
-Console.WriteLine(s.MinRefuelStops(1, 1, []));
-Console.WriteLine(s.MinRefuelStops(100, 1, [[10,100]]));
-Console.WriteLine(s.MinRefuelStops(100, 10, [[10,60],[20,30],[30,30],[60,40]]));
+// L871.Solution s = new();
+// Console.WriteLine(s.MinRefuelStops(1, 1, []));
+// Console.WriteLine(s.MinRefuelStops(100, 1, [[10,100]]));
+// Console.WriteLine(s.MinRefuelStops(100, 10, [[10,60],[20,30],[30,30],[60,40]]));
+
+// 743
+L743.Solution s = new();
+Console.WriteLine(s.NetworkDelayTime([[2,1,1],[2,3,1],[3,4,1]], 4, 2));
+Console.WriteLine(s.NetworkDelayTime([[1,2,1]], 2, 1));
+Console.WriteLine(s.NetworkDelayTime([[1,2,1]], 2, 2));
+Console.WriteLine(s.NetworkDelayTime([[2,1,1],[2,3,1],[3,4,2],[1,4,1]], 4, 2));
+Console.WriteLine(s.NetworkDelayTime([[1,2,1],[2,3,2],[1,3,2]], 3, 1));
