@@ -454,7 +454,34 @@
 // Console.WriteLine(s.MincostTickets([1,2,3,4,5,6,7,8,9,10,30,31], [2,7,15]));
 
 // 871
-L871.Solution s = new();
-Console.WriteLine(s.MinRefuelStops(1, 1, []));
-Console.WriteLine(s.MinRefuelStops(100, 1, [[10,100]]));
-Console.WriteLine(s.MinRefuelStops(100, 10, [[10,60],[20,30],[30,30],[60,40]]));
+// L871.Solution s = new();
+// Console.WriteLine(s.MinRefuelStops(1, 1, []));
+// Console.WriteLine(s.MinRefuelStops(100, 1, [[10,100]]));
+// Console.WriteLine(s.MinRefuelStops(100, 10, [[10,60],[20,30],[30,30],[60,40]]));
+
+// 3266
+// L3266.Solution s = new();
+// Console.WriteLine(String.Join(',', s.GetFinalState([2,1,3,5,6], 5, 2)));
+// Console.WriteLine(String.Join(',', s.GetFinalState([100000,2000], 2, 1000000)));
+// Console.WriteLine(String.Join(',', s.GetFinalState([66307295,441787703,589039035,322281864], 900900704, 641725)));
+
+// 1847
+// L1847.Solution s = new();
+// Console.WriteLine(String.Join(',', s.ClosestRoom([[2,2],[1,2],[3,2]], [[3,1],[3,3],[5,2]])));
+// Console.WriteLine(String.Join(',', s.ClosestRoom([[1,4],[2,3],[3,5],[4,1],[5,2]], [[2,3],[2,4],[2,5]])));
+
+// 1705
+// L1705.Solution s = new();
+// Console.WriteLine(s.EatenApples([1,2,3,5,2], [3,2,1,4,2]));
+// Console.WriteLine(s.EatenApples([3,0,0,0,0,2], [3,0,0,0,0,2]));
+
+// 3065
+// L3065.Solution s = new();
+// Console.WriteLine(s.MinOperations([2,11,10,1,3], 10));
+// Console.WriteLine(s.MinOperations([1,1,2,4,9], 1));
+// Console.WriteLine(s.MinOperations([1,1,2,4,9], 9));
+
+// 3066
+L3066.Solution s = new();
+Console.WriteLine(s.MinOperations([2,11,10,1,3], 10));
+Console.WriteLine(s.MinOperations([1,1,2,4,9], 20));
