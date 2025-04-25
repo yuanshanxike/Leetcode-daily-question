@@ -1,5 +1,5 @@
 # Leetcode-daily-question
-Kotlin, C#, TypeScript and more...
+By **Kotlin**, **C#**, **TypeScript**, **Rust** and more...
 
 
 #### TODO List

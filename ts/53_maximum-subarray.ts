@@ -27,6 +27,45 @@ console.log(maxSubArray([-1,-1,-1,-1]))
 
 /**
  * 还可以直接一遍遍历，记录值大于 0 的连续子数组和，并每次统计这个数值的最大值。如果这个数值小于 0，则下次重新以新元素的值作为连续子数组和... 重复直至遍历完数组
- * 
- * TODO: 题目进阶所提到的 “分治法”
  */
+function maxSubArray1(nums: number[]): number {
+    let ans = -Infinity, pre = 0
+    for (const num of nums) {
+        pre = Math.max(pre + num, num)  // 0 .. i 项的后缀最大值
+        ans = Math.max(ans, pre)
+    }
+    return ans
+}
+
+/**
+ * 方法三：分治法
+ * 时间复杂度：O(log(n))
+ */
+function maxSubArray2(nums: number[]): number {
+    return getStatus(nums, 0, nums.length - 1).mSum;
+}
+
+function Status(l: number, r: number, m: number, i: number) {
+    this.lSum = l;  // 以 l 为左端点的最大子数组和
+    this.rSum = r;  // 以 r 为右端点的最大子数组和
+    this.mSum = m;  // l .. r 的最大子数组和
+    this.iSum = i;  // 数组和
+}
+
+const pushUp = (l: { iSum: number; lSum: number; rSum: number; mSum: number }, r: { iSum: number; lSum: number; rSum: number; mSum: number }) => {
+    const iSum = l.iSum + r.iSum;
+    const lSum = Math.max(l.lSum, l.iSum + r.lSum);
+    const rSum = Math.max(r.rSum, r.iSum + l.rSum);
+    const mSum = Math.max(Math.max(l.mSum, r.mSum), l.rSum + r.lSum);  // 最大子数组和可能出现在左子数组、右子数组、跨越中点的情况
+    return new Status(lSum, rSum, mSum, iSum);
+}
+
+const getStatus = (a: number[], l: number, r: number) => {
+    if (l === r) {
+        return new Status(a[l], a[l], a[l], a[l]);
+    }
+    const m = (l + r) >> 1;
+    const lSub = getStatus(a, l, m);
+    const rSub = getStatus(a, m + 1, r);
+    return pushUp(lSub, rSub);
+}
